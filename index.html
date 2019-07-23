@@ -1,0 +1,50 @@
+<! DOCTYPE html>
+    <html>
+
+    <head>
+    <!--Load in my css-->
+    <link href='./main.css' rel='stylesheet' />
+
+    <!--Load in Leaflet and ESRI Leaflet CSS and JS   -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+
+    <script src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js" integrity="sha512-tyPum7h2h36X52O2gz+Pe8z/3l+Y9S1yEUscbVs5r5aEY5dFmP1WWRY/WLLElnFHa+k1JBQZSCDGwEAnm2IxAQ==" crossorigin=""></script>
+
+    <!--Load in Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!--create app container with 3 other containers inside-->
+    <div class="app-container">
+        <div class="nav-container">
+            <div>
+                <img id='logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tricolour_Cockade.svg/1200px-tricolour_cockade.svg.png' />
+            </div>
+            <div id='logo-name'>U.S. 113th Congressional Districts</div>
+            <div id='spacer'></div>
+            <div>About</div>
+            <div>Contact</div>
+        </div>
+
+        <div class="map-container">
+            <div id="map"></div>
+
+        </div>
+
+        <div class="side-pane-container">
+            <div id='side-pane-title'>Who was your district representative?</div>
+            <div id="map-legend"></div>
+            <div>
+                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Capitol_at_Dusk_2.jpg/1280px-Capitol_at_Dusk_2.jpg' />
+            </div>
+            <div>
+                The <strong>One Hundred Thirteenth United States Congress </strong> was a meeting of the legislative branch of the United States Federal Government, from January 3, 2013 to January 3, 2015, during the 5th and 6th years of Barack Obama's presidency. It was Composed of the United States Senate and the United States House of Representatives based on the results of the 2012 Senate elections and the 2012 House elections. The seats in the House were apportioned based on the 2010 United States Census. It first met in Washington, D.C. on January 3, 2013, and it ended on January 3, 2015. Senators elected to regular terms in 2008 were in the last two years of those terms during this Congress.
+            </div>
+        </div>
+    </div>
+    <script src="map.js"></script>
+</body></html>
