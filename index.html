@@ -4,6 +4,8 @@
     <head>
     <!--Load in my css-->
     <link href='./main.css' rel='stylesheet' />
+    <!--Load in modal css-->
+    <link href="./modal.css" rel="stylesheet">
 
     <!--Load in Leaflet and ESRI Leaflet CSS and JS   -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
@@ -14,6 +16,8 @@
 
     <!--Load in Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap" rel="stylesheet" />
+    
+
 
 </head>
 
@@ -26,8 +30,20 @@
             </div>
             <div id='logo-name'>U.S. 113th Congressional Districts</div>
             <div id='spacer'></div>
-            <div>About</div>
-            <div>Contact</div>
+            <button id="MyBttn">How was this map created?</button>
+            <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <!--"x" button to close model-->
+                        <span class="close">&times;</span>
+                        <p>This interactive map app was custom created using <b>LeafletJS</b> as well as data layers from ESRI ArcGIS Online (AGOL). It is meant to display my understanding of creating custom web maps using <b>HTML, CSS, and JavaScript.</b> While I am proficient with AGOL, my knowlege of web languages allows for more control and customization of projects. Please explore by clicking on and hovering over a state to see my code in action!</p>
+                    </div>
+
+            </div>
+            <div>
+                <button><a href="mailto:kelly.taylor2013@gmail.com">Contact</a></button>
+            </div>
         </div>
 
         <div class="map-container">
@@ -46,5 +62,10 @@
             </div>
         </div>
     </div>
+    
+    <!--Load in modal js-->
+    <script src="./modal.js"></script>
+    
     <script src="map.js"></script>
+    
 </body></html>
