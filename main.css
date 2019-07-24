@@ -24,6 +24,16 @@ body {
     overflow: hidden;
 }
 
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 
 /*basic layout*/
 .app-container {
@@ -76,13 +86,13 @@ body {
     overflow: auto;
 }
 
-.side-pane-container > div{
+.side-pane-container > div {
     text-align: justify;
     align-items: center;
     padding: 10px;
 }
 
-.side-pane-container > div > img{
+.side-pane-container > div > img {
     box-shadow: 2px 6px 8px #888888;
     border-radius: 2px;
 }
@@ -117,3 +127,28 @@ body {
     font-family: 'Anton', sans-serif;
 }
 
+button {
+    background-color: #000000;
+    border: none;
+    color: #efefef;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "roboto", helvetica, sans-serif;
+/*    font-size: 16px;*/
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/*rgba is color and opacity*/
+button:hover {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 10px 50px rgba(0, 0, 0, 0.19);
+
+}
+
+/*moves button in y direction on click*/
+button:active {
+    transform: translateY(1px)
+}
